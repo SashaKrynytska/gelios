@@ -1,0 +1,252 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --background-color: #fff;
+  --bg-color-footer: #2f303a;
+
+  --card-set-gap: 30px;
+}
+
+/*Основные стили*/
+body {
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Хедер*/
+.header {
+  background-color: var(--primary-white-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+/* Лого */
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo > span {
+  color: var(--title-text-color);
+}
+
+.logo .logo-footer {
+  color: var(--primary-white-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/*Навигация*/
+
+.header {
+  border: 1px solid #ececec;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 93px;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-list a.current {
+  color: var(--accent-color);
+}
+.header-list .link {
+  color: var(--title-text-color);
+}
+
+.header-list .header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-list .header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-list .link:hover,
+.header-list .link:focus {
+  color: var(--accent-color);
+}
+
+/*Хедер-контакты*/
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .header-item + .header-item {
+  margin-left: 50px;
+}
+.nav-contacts {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-contacts:hover,
+.nav-contacts:focus {
+  color: var(--accent-color);
+}
+/*Герой*/
+.hero {
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: var(--primary-text-color);
+}
+
+.hero-title {
+  margin: 0 auto 15px auto;
+  text-align: center;
+  max-width: 700px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+}
+
+.hero-descr {
+  margin: 50px auto 10px auto;
+  text-align: center;
+  max-width: 1000px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+}
+
+.hero-overlay {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/canon-maxify-gx6020-04.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/*Секция Преимущества*/
+
+.section-title {
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.onas {
+  padding: 15px 60px 10px 60px;
+}
+
+.onas-list:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.onas-list-legisl:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.legislativa-title {
+  padding: 50px 0 0 60px;
+}
+
+.features {
+  padding-bottom: 0;
+}
+.features-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  margin-left: calc(-1 * var(--card-set-gap));
+}
+
+.features-item {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+}
+
+.features-list-title {
+  margin-bottom: 15px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-list-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
